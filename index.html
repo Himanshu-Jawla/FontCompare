@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Compare Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Font Compare Tool</h1>
+    <button id="themeToggle">Toggle Dark/Light</button>
+  </header>
+
+  <section id="controls">
+    <div>
+      <label>Search Font: </label>
+      <input type="text" id="fontSearch" placeholder="Type a font name...">
+      <select id="fontSelect"></select>
+    </div>
+
+    <div>
+      <label>Manual Font Size (px): </label>
+      <input type="number" id="fontSizeInput" value="16" min="8" max="100">
+    </div>
+
+    <div>
+      <label>Font Color: </label>
+      <input type="color" id="fontColor" value="#000000">
+      <label>Background: </label>
+      <input type="color" id="bgColor" value="#ffffff">
+    </div>
+
+    <div>
+      <label>Recommend Font by Vibe: </label>
+      <input type="text" id="vibeInput" placeholder="e.g. formal, playful, serious">
+      <button id="recommendBtn">Recommend</button>
+    </div>
+
+    <button id="saveBtn">Save & Share</button>
+  </section>
+
+  <main id="preview">
+    <div class="card">
+      <h2 class="preview-heading">Heading Example</h2>
+      <h3 class="preview-subheading">Subheading Example</h3>
+      <p class="preview-body">Body text example: Lorem ipsum dolor sit amet...</p>
+      <span class="preview-caption">Caption example</span>
+    </div>
+  </main>
+
+  <section id="extras">
+    <h2>Font Pairing Suggestions</h2>
+    <ul id="pairingList"></ul>
+
+    <h2>Accessibility Checker</h2>
+    <p id="accessibilityReport">Checking...</p>
+
+    <h2>Performance Insights</h2>
+    <p id="performanceReport">Checking...</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
